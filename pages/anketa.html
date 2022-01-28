@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>
-    Регистрация на конференцию
+    Анкета
 </title>
 
     <meta charset="UTF-8">
@@ -14,25 +14,45 @@
 <body> 
     <!--Шапка сайта-->
     <header>
-        <H1>Веб-технологии</H1>
+        <H1 class="page-title">Веб-технологии</H1>
     <nav class="blog-navigation">
         <ul>
             <li><a href="../index.html">Главная</a></li>
+            
         </ul>
     </nav>
     </header>
     <!--Основное содержимое-->
     <main>
-        <h2>Регистрация на конференцию</h2>
+        <h1>Анкета</h1>
         <form action="" method="post">
+
     <div>
-        <label for="user_name">Фамилия Имя Отчество</label>
-        <input type="text" name="user_name" id="user_name" 
+        <label for="user_lastname">Фамилия</label>
+        <input type="text" name="user_lastname" id="user_lastname" 
         required 
-        placeholder="Фамилия Имя Отчество"         
-        pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"
+        placeholder="Фамилия"         
+        pattern="[А-Я][а-я]+"
         size="20">
     </div>
+    <div>
+        <label for="user_firstname">Имя</label>
+        <input type="text" name="user_firstname" id="user_firstname" 
+        required 
+        placeholder="Имя"         
+        pattern="[А-Я][а-я]+"
+        size="20">
+    </div>
+    <div>
+        <label for="user_login">Логин</label>
+        <input type="text" name="user_login" id="user_login" 
+        required 
+        placeholder="Логин"         
+        pattern="[A-Za-z]*"
+        size="20">
+    </div>
+    
+ 
     <div>
         <label for="tel">Контактный телефон</label>
         <input type="tel" name="tel" id="tel"
