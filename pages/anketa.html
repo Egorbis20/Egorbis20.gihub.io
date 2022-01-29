@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+    Анкета
+</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body> 
+    <!--Шапка сайта-->
+    <header>
+        <H1 class="page-title">Веб-технологии</H1>
+    <nav class="blog-navigation">
+        <ul>
+            <li><a href="../index.html">Главная</a></li>
+            
+        </ul>
+    </nav>
+    </header>
+    <!--Основное содержимое-->
+    <main>
+        <h1>Анкета</h1>
+        <form action="" method="post">
+
+    <div>
+        <label for="user_lastname">Фамилия</label>
+        <input type="text" name="user_lastname" id="user_lastname" 
+        required 
+        placeholder="Фамилия"         
+        pattern="[А-Я][а-я]+"
+        size="20">
+    </div>
+    <div>
+        <label for="user_firstname">Имя</label>
+        <input type="text" name="user_firstname" id="user_firstname" 
+        required 
+        placeholder="Имя"         
+        pattern="[А-Я][а-я]+"
+        size="20">
+    </div>
+    <div>
+        <label for="user_login">Логин</label>
+        <input type="text" name="user_login" id="user_login" 
+        required 
+        placeholder="Логин"         
+        pattern="[A-Za-z]*"
+        size="20">
+    </div>
+    <div>
+        <label for="user_password">Пароль</label>
+        <input type="text" name="user_password" id="user_password" 
+        required 
+        placeholder="Пароль"         
+        pattern="[A-Za-z]+"
+        size="20">
+    </div>
+    
+ 
+    <div>
+        <label for="tel">Контактный телефон</label>
+        <input type="tel" name="tel" id="tel"
+        required 
+        placeholder="+79000000000" 
+        pattern="[+][7][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+    </div>    
+    <div>
+        <label for="section">Выбор предмета</label><br>
+        <select name="section" id="section">
+            <option value="mat">Математика</option>
+            <option value="eng">Анг.яз</option>
+            <option value="fiz">Физика</option>
+            <option value="inf">Информатика</option>
+        </select>
+    </div>
+    <div>
+        <div>Выбор времени</div>
+        <input type="radio" checked name="edutype" id="offline"> <label for="offline">9:00</label><br>
+        <input type="radio" name="edutype" id="online"> <label for="online">10:00</label><br>
+        <input type="radio" name="edutype" id="online_offline"> <label for="online_offline">11:00</label><br>
+        <input type="radio" name="edutype" id="online_offline"> <label for="online_offline">16:00</label>
+    </div>   
+    <div>Форма контроля:
+        <label for="test">Тест</label>
+        <input type="checkbox" name="test" id="test">       
+        <label for="sv">Cобеседование</label>
+        <input type="checkbox" name="sv" id="sv">
+        <label for="speaker">Доклад</label>
+        <input type="checkbox" name="speaker" id="speaker">
+        <label for="kr">Участие с докладом</label>
+        <input type="checkbox" name="kr" id="kr">
+    </div>
+    <div>
+        <label for="report">Дополнительная информация</label><br>
+        <textarea name="report" id="report" cols="30" rows="3"></textarea>
+    </div>
+    
+    <div>
+        <input type="submit" value="Отправить">
+    </div>
+    
+
+        </form>
+
+    </main>
+   
+    <!--Подвал сайта-->
+    <footer>
+        <h3>2021-2022 учебный год</h3>
+    </footer>
+</body>
+</html>
